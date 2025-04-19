@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love You Shree</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <audio id="bg-music" src="assets/dreamy-music.mp3" autoplay loop></audio>
+
+  <div class="scene">
+    <div class="sparkle-cursor"></div>
+    <svg viewBox="0 0 800 600" id="dance-scene">
+      <g id="dancers">
+        <path id="girl" d="M250,400 Q240,380 240,360 Q250,340 260,360 Q270,380 260,400 Z" fill="white" opacity="0.8"/>
+        <path id="boy" d="M300,400 Q290,380 290,360 Q300,340 310,360 Q320,380 310,400 Z" fill="white" opacity="0.8"/>
+      </g>
+      <g id="flower" style="opacity:0">
+        <circle cx="275" cy="370" r="5" fill="pink"/>
+        <line x1="275" y1="375" x2="275" y2="390" stroke="green" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="final-text">Love you Shree</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="scripts/animation.js"></script>
+  <script src="scripts/cursor.js"></script>
+</body>
+</html>
